@@ -1,3 +1,4 @@
+
 // JS goes here
 
 //Hover effects for daily meal recommendation
@@ -50,3 +51,4 @@ arrayMeals.forEach((meal) => meal.addEventListener("mouseover", MealSizeHover));
 arrayMeals.forEach((meal) =>
   meal.addEventListener("mouseout", MealSizeNoHover)
 );
+
