@@ -204,16 +204,9 @@ nav {
 }
 
 .search-bar-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0.3;
   /* margin-left: 0.5rem; */
-  background-color: transparent;
   width: 40px;
-  padding: 0.5rem;
-  border: none;
-  cursor: pointer;
 }
 
 .search-bar-button img {
@@ -222,19 +215,26 @@ nav {
 }
 
 footer {
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
   background-color: #f5f5f7;
+  padding: 1rem 0;
 }
+
 .footer-wrapper {
+  align-self: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 80vw;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
+  padding: 3rem 1rem;
 }
 
 .footer-list {
@@ -247,11 +247,42 @@ footer {
   padding-right: 1rem;
 }
 
+.footer-list-about {
+  padding: 0;
+  font-weight: 500;
+}
+
+.contact-mail:any-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-mail:hover {
+  text-decoration: underline;
+}
+
+.footer-subheading {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.footer-about-link:any-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-wrapper-about {
+  justify-content: space-evenly;
+  padding: 2rem 1rem;
+}
+
 /* Stores */
 
 .meal-of-day {
   padding: 3rem 3rem;
-  margin: 2rem 2rem;
+  margin: 2rem 0rem;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -275,6 +306,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   /* width: 80vw; */
 }
 
@@ -350,4 +382,33 @@ footer {
 .meal-visible {
   visibility: visible;
   opacity: 1;
+}
+
+/* Utilities */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 725px) {
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-container {
+    align-items: center;
+  }
+  .daily-icon-wrapper {
+    visibility: visible;
+  }
 }

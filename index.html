@@ -48,7 +48,7 @@
             <input type="text" placeholder="Search" />
           </div>
 
-          <button class="search-bar-button">
+          <button class="search-bar-button button">
             <img src="/images-franz/search-interface-symbol.png" alt="" />
           </button>
         </form>
@@ -148,23 +148,46 @@
     <footer>
       <div class="footer-wrapper">
         <article class="footer-container">
-          <h3>Social</h3>
+          <h3 class="footer-subheading">Social</h3>
 
           <ul class="footer-list">
-            <li><i class="fab fa-facebook fa-5x"></i></li>
-            <li><i class="fab fa-twitter fa-5x"></i></li>
-            <li><i class="fab fa-instagram fa-5x"></i></li>
+            <li><i class="fab fa-facebook fa-3x"></i></li>
+            <li><i class="fab fa-twitter fa-3x"></i></li>
+            <li><i class="fab fa-instagram fa-3x"></i></li>
           </ul>
         </article>
 
         <article class="footer-container">
-          <h3>Contact</h3>
+          <h3 class="footer-subheading">Contact</h3>
+
+          <p>
+            <a href="mailto:sayHi@cooking.friends" class="contact-mail">
+              sayHi@cooking.friends
+            </a>
+          </p>
         </article>
 
         <article class="footer-container">
-          <h3>Newsletter</h3>
+          <h3 class="footer-subheading">Newsletter</h3>
+
+          <form class="search-bar-wrapper">
+            <div class="search-bar-field">
+              <input type="text" placeholder="Enter Email" />
+            </div>
+
+            <button class="newsletter-button button">
+              <i class="fas fa-paper-plane fa-2x"></i>
+            </button>
+          </form>
         </article>
       </div>
+      <ul
+        class="footer-wrapper footer-wrapper-about footer-list footer-list-about"
+      >
+        <li><a href="" class="footer-about-link">Terms & Conditon</a></li>
+        <li><a href="" class="footer-about-link">Legal</a></li>
+        <li><a href="" class="footer-about-link">Privacy Policy</a></li>
+      </ul>
     </footer>
 
     <script
@@ -174,6 +197,7 @@
     ></script>
 
     <script src="script.js"></script>
+
     <script
       src="https://kit.fontawesome.com/395f95800a.js"
       crossorigin="anonymous"
