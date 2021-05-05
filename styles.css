@@ -136,13 +136,43 @@ table {
   position: relative;
   display: inline-block;
   align-items: center;
-  margin: 20px 10px 20px 170px;
+  margin: 20px 10px 20px 90px;
 }
+
 .carousel-inner {
-  background-color: salmon;
+  background-color: #f39289;
 }
-.secondcarousel {
-  background-color: red;
+
+#carouselmain {
+  background-color: #a7d0cd;
+}
+#carouseldesert {
+  background-color: #f0ebcc;
+}
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  height: 300px;
+  width: 60px;
+  outline: $color-white;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid $color-white;
+  background-color: $color-white;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 48px;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 48px;
 }
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
