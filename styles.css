@@ -149,10 +149,12 @@ table {
 #carouseldesert {
   background-color: #f0ebcc;
 }
-h1 {
+
+/* h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
-}
+} */
+
 .carousel-control-prev,
 .carousel-control-next {
   height: 300px;
@@ -193,6 +195,14 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: bolder;
+}
+
+h2 {
+  padding-bottom: 2rem;
+  font-family: "Roboto slab", serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Sitewide */
@@ -335,14 +345,6 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   width: 80vw;
-}
-
-.meal-of-day-heading {
-  padding-bottom: 2rem;
-  font-family: "Roboto slab", serif;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .day-wrapper {
