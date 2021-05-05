@@ -106,7 +106,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
   box-sizing: border-box;
-  
 }
 
 ol,
@@ -132,8 +131,174 @@ table {
   border-spacing: 0;
 }
 
-
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
+/* General */
 
+h1 {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+}
+
+/* Sitewide */
+
+/* * {
+  border: 1px solid black !important;
+} */
+
+header {
+  padding: 0.5rem 10rem;
+  box-shadow: 0 -2px 5px rgb(0 0 0 / 33%);
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-wrapper img {
+  width: 10vw;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-field input {
+  border-radius: 0.25rem;
+  border: 1px solid gray;
+  height: 2rem;
+  width: 15vw;
+  font-size: 1rem;
+  color: gray;
+  text-indent: 0.5rem;
+}
+
+.search-bar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3;
+  /* margin-left: 0.5rem; */
+  background-color: transparent;
+  width: 3vw;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.search-bar-button img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stores */
+
+/* .meal-of-day * {
+  border: 1px solid black;
+} */
+
+.meal-of-day {
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+.day-meal {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0.1rem;
+  color: white;
+  transition: flex 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  text-align: center;
+}
+
+.day-meal-grow {
+  flex: 1.5;
+  transition: flex 1s cubic-bezier(0.25, 1, 0.5, 1);
+  background-size: cover;
+}
+
+.daily-header {
+  font-weight: lighter;
+  visibility: hidden;
+  transition: all 0.5s linear;
+  opacity: 0;
+  padding: 1rem;
+}
+
+.day-meal-course {
+  margin: 0;
+}
+
+.day-starter-background {
+  background-image: url(/images-franz/daily-starter.jpg);
+}
+
+.day-main-background {
+  background-image: url(/images-franz/daily-main.jpg);
+}
+
+.day-dessert-background {
+  background-image: url(/images-franz/daily-dessert.jpg);
+}
+
+.daily-icon-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  visibility: hidden;
+  transition: all 0.5s linear;
+  opacity: 0;
+  text-align: center;
+  padding: 1rem;
+}
+
+.daily-icon-wrapper span {
+  display: block;
+}
+
+.meal-visible {
+  background-color: rgb(0 0 0 / 33%);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
