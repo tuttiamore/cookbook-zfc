@@ -216,7 +216,8 @@ h2 {
 }
 
 header {
-  padding: 0.5rem 10vw;
+  display: flex;
+  justify-content: center;
   box-shadow: 0 -2px 5px rgb(0 0 0 / 33%);
 }
 
@@ -225,8 +226,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  top: 0;
-  left: 0;
+  width: 80vw;
 }
 
 .logo-wrapper {
@@ -247,14 +247,15 @@ nav {
   align-items: center;
 }
 
-.search-bar-field input {
-  border-radius: 0.25rem;
-  border: 1px solid gray;
+.search-bar-field {
+  border: 0;
+  border-bottom: 1px solid gray;
   height: 2rem;
-  width: auto;
+  width: 15vw;
   font-size: 1rem;
   color: gray;
   text-indent: 0.5rem;
+  transition: all 0.3s ease-in;
 }
 
 .search-bar-button {
@@ -345,6 +346,14 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   width: 80vw;
+}
+
+.meal-of-day :any-link {
+  padding: inherit;
+  margin: inherit;
+  text-decoration: inherit;
+  font: inherit;
+  color: inherit;
 }
 
 .day-wrapper {
@@ -455,6 +464,11 @@ footer {
     align-items: center;
   }
   .daily-icon-wrapper {
+    visibility: visible;
+  }
+
+  .search-bar-field {
+    width: 20vw;
     visibility: visible;
   }
 }
