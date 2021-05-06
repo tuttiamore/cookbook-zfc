@@ -13,6 +13,11 @@
     />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
@@ -39,18 +44,25 @@
             alt="funny humanized animals cooking something"
           />
           <h1>
-            <span class="logo-cooking">Cooking</span>
+            <span class="logo-cooking">Cooking</span> <br />
             <span class="logo-with">with</span>
             <span class="logo-friends">friends</span>
           </h1>
         </div>
 
-        <form class="search-bar-wrapper">
-          <input type="text" placeholder="Search" class="search-bar-field" />
-          <button class="search-bar-button button">
-            <img src="/images-franz/search-interface-symbol.png" alt="" />
-          </button>
-        </form>
+        <div class="nav-menu-container">
+          <ul class="nav-menu-list">
+            <li class="list-item-starter"><a href="">Appetizers</a></li>
+            <li class="list-item-main"><a href="">Mains</a></li>
+            <li class="list-item-dessert"><a href="">Desserts</a></li>
+          </ul>
+          <form class="search-bar-wrapper">
+            <input type="text" placeholder="Search" class="search-bar-field" />
+            <button class="search-bar-button button">
+              <img src="/images-franz/search-interface-symbol.png" alt="" />
+            </button>
+          </form>
+        </div>
       </nav>
     </header>
 
@@ -61,11 +73,11 @@
       </h2>
       <div class="day-wrapper">
         <article class="day-meal day-starter-background">
-          <h3 class="daily-header day-starter-background-color">
+          <h3 class="daily-header starter-background-color">
             <a href="single_receipe.html">Italian avocado toast</a>
           </h3>
 
-          <div class="daily-icon-wrapper day-starter-background-color">
+          <div class="daily-icon-wrapper starter-background-color">
             <div><span class="material-icons-outlined"> pan_tool </span></div>
             <div><span class="material-icons-outlined"> timer </span></div>
             <div>
@@ -85,11 +97,9 @@
         </article>
 
         <article class="day-meal day-main-background">
-          <h3 class="daily-header day-main-background-color">
-            Egyptian gambas
-          </h3>
+          <h3 class="daily-header main-background-color">Egyptian gambas</h3>
 
-          <div class="daily-icon-wrapper day-main-background-color">
+          <div class="daily-icon-wrapper main-background-color">
             <div><span class="material-icons-outlined"> pan_tool </span></div>
             <div><span class="material-icons-outlined"> timer </span></div>
             <div>
@@ -109,11 +119,11 @@
         </article>
 
         <article class="day-meal day-dessert day-dessert-background">
-          <h3 class="daily-header day-dessert-background-color">
+          <h3 class="daily-header dessert-background-color">
             German cheesecake
           </h3>
 
-          <div class="daily-icon-wrapper day-dessert-background-color">
+          <div class="daily-icon-wrapper dessert-background-color">
             <div><span class="material-icons-outlined"> pan_tool </span></div>
             <div><span class="material-icons-outlined"> timer </span></div>
             <div>
@@ -444,8 +454,8 @@
         <article class="footer-container">
           <h3 class="footer-subheading">Newsletter</h3>
 
-          <form class="search-bar-wrapper">
-            <div class="search-bar-field">
+          <form class="footer-newsletter-wrapper">
+            <div class="footer-newsletter-input">
               <input type="text" placeholder="Enter Email" />
             </div>
 

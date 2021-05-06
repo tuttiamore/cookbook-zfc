@@ -130,6 +130,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'DM Serif Display', serif; */
+
+/* Zina's CSS */
+
 .carousel-item img {
   padding: 10px;
   background-color: white;
@@ -177,9 +186,6 @@ table {
   height: 48px;
 }
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif; */
-
 /* General */
 
 body {
@@ -193,7 +199,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: bolder;
 }
 
@@ -219,6 +225,7 @@ header {
   display: flex;
   justify-content: center;
   box-shadow: 0 -2px 5px rgb(0 0 0 / 33%);
+  height: 15vh;
 }
 
 nav {
@@ -237,6 +244,48 @@ nav {
 
 .logo-wrapper img {
   width: 10vw;
+}
+
+.nav-menu-list {
+  display: flex;
+  flex-direction: row;
+  text-indent: 0;
+  padding-right: 1rem;
+}
+
+.nav-menu-list :any-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu-list li {
+  padding: 2rem;
+  font-weight: 500;
+}
+
+.nav-menu-list li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.nav-menu-list li.list-item-starter:hover a {
+  color: rgba(243, 145, 137, 80%);
+}
+
+.nav-menu-list li.list-item-main:hover a {
+  color: rgba(167, 208, 205, 80%);
+}
+
+.nav-menu-list li.list-item-dessert:hover a {
+  color: rgba(240, 235, 204, 80%);
+}
+
+.nav-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-bar-wrapper {
@@ -333,6 +382,25 @@ footer {
   padding: 2rem 1rem;
 }
 
+.footer-newsletter-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-newsletter-input input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: white;
+  height: 2rem;
+  width: 15vw;
+  font-size: 1rem;
+  color: gray;
+  text-indent: 0.5rem;
+  transition: all 0.3s ease-in;
+}
 /* Stores */
 
 .meal-of-day {
@@ -389,22 +457,12 @@ footer {
   /* font-family: "Roboto Slab", serif; */
   font-size: 1.5rem;
   font-weight: 300;
+  text-decoration: underline;
+  text-underline-offset: 7px;
   visibility: hidden;
   transition: all 0.5s linear;
   opacity: 0;
   padding: 1rem;
-}
-
-.day-starter-background-color {
-  background-color: rgba(243, 145, 137, 80%);
-}
-
-.day-main-background-color {
-  background-color: rgba(167, 208, 205, 80%);
-}
-
-.day-dessert-background-color {
-  background-color: rgba(240, 235, 204, 80%);
 }
 
 .day-starter-background {
@@ -451,6 +509,18 @@ footer {
   cursor: pointer;
 }
 
+.starter-background-color {
+  background-color: rgba(243, 145, 137, 80%);
+}
+
+.main-background-color {
+  background-color: rgba(167, 208, 205, 80%);
+}
+
+.dessert-background-color {
+  background-color: rgba(240, 235, 204, 80%);
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 725px) {
@@ -463,12 +533,25 @@ footer {
   .footer-container {
     align-items: center;
   }
-  .daily-icon-wrapper {
-    visibility: visible;
+
+  .nav-menu-container {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    background-color: white;
+    width: 50vw;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: stretch;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .search-bar-field {
-    width: 20vw;
-    visibility: visible;
+  .nav-menu-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-menu-list li {
+    border-bottom: 1px solid gray;
   }
 }
