@@ -139,6 +139,10 @@ table {
   margin: 20px 10px 20px 90px;
 }
 
+.carousel-item img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
 .carousel-inner {
   background-color: #f39289;
 }
@@ -160,6 +164,7 @@ h1 {
   font-family: "Roboto slab", serif;
   font-weight: 300;
   text-transform: uppercase;
+  font-size: x-large;
 }
 
 /* font-family: 'Roboto', sans-serif;
