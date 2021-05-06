@@ -1,7 +1,9 @@
-
 // JS goes here
 
-//Hover effects for daily meal recommendation
+//////////////////////////////////////////////
+// Hover effects for daily meal recommendation
+//////////////////////////////////////////////
+
 // Functionality: expand image on hover, show name and characteristics of dish
 
 let arrayMeals = document.querySelectorAll("article.day-meal");
@@ -52,3 +54,16 @@ arrayMeals.forEach((meal) =>
   meal.addEventListener("mouseout", MealSizeNoHover)
 );
 
+//////////////////////////////////////////////
+// Menu appear on click in responsive mode
+//////////////////////////////////////////////
+
+let menuButton = document.querySelector(".menu-button");
+console.log(menuButton);
+
+function navMenuVisibility() {
+  console.log("click");
+  document.querySelector(".nav-menu-container").classList.toggle("visible");
+}
+
+menuButton.addEventListener("click", navMenuVisibility);
