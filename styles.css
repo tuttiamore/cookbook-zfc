@@ -177,6 +177,7 @@ font-family: 'DM Serif Display', serif; */
   border-radius: 50%;
   border: 1px solid $color-white;
   background-color: $color-white;
+}
 
 .carousel-control-next-icon {
   margin-left: 60px;
@@ -196,7 +197,6 @@ h1 {
 
 .single-recipe {
   font-family: "Roboto", sans-serif;
-
 }
 
 .single-recipe > h1 {
@@ -206,7 +206,6 @@ h1 {
 .row-green {
   background-color: #cae2e1;
 }
-
 
 .row-red {
   background-color: #f7bdb8;
