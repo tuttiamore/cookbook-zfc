@@ -106,6 +106,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
   box-sizing: border-box;
+
 }
 
 ol,
@@ -125,6 +126,7 @@ q:after {
   content: "";
   content: none;
 }
+
 
 table {
   border-collapse: collapse;
@@ -175,9 +177,38 @@ h1 {
   height: 48px;
 }
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif; */
+/* Claudia */
 
+.single-recipe{
+  font-family: 'Roboto', sans-serif;
+  }
+
+  .single-recipe > h1 {
+    font-family: 'Roboto Slab', serif;
+  }
+
+
+.row-green{
+  background-color:#CAE2E1;
+}
+
+
+.row-red {
+  background-color:#F7BDB8;
+  
+}
+.row-yellow{
+  background-color: #F6F3E0;
+}
+
+tr.people{
+  text-align:end;
+}
+tbody tr:hover{
+  opacity: 0.9;
+  font-size: 0.8rem;
+  font-weight:600;
+}
 /* General */
 
 body {
@@ -455,4 +486,5 @@ footer {
   .daily-icon-wrapper {
     visibility: visible;
   }
+
 }
