@@ -145,7 +145,7 @@ font-family: 'DM Serif Display', serif; */
   position: relative;
   display: inline-block;
   align-items: center;
-  margin: 20px 5px 20px 85px;
+  margin: 20px 5px 20px 93px;
 }
 
 .carousel-item img:hover {
@@ -168,23 +168,13 @@ font-family: 'DM Serif Display', serif; */
   font-family: "Roboto", sans-serif;
 } */
 
-.carousel-control-prev,
-.carousel-control-next {
-  height: 300px;
-  width: 60px;
-  outline: $color-white;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid $color-white;
-  background-color: $color-white;
-}
-
 .carousel-control-next-icon {
-  margin-left: 60px;
+  margin-left: 80px;
 }
 .carousel-control-prev-icon {
-  margin-right: 60px;
+  margin-right: 80px;
 }
+
 /* h1 {
   text-align: center;
   font-family: "Roboto slab", serif;
