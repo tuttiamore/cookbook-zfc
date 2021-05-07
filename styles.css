@@ -217,10 +217,14 @@ font-family: 'DM Serif Display', serif; */
 tr.people {
   text-align: end;
 }
+
+tbody.ingredients{
+font-size: 0.8rem;
+}
+
 tbody tr:hover {
   opacity: 0.9;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 1.1rem;
 }
 /* General */
 
