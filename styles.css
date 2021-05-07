@@ -208,8 +208,8 @@ tr.people {
   text-align: end;
 }
 
-tbody.ingredients{
-font-size: 0.8rem;
+tbody.ingredients {
+  font-size: 0.8rem;
 }
 
 tbody tr:hover {
@@ -502,15 +502,15 @@ footer {
 }
 
 .day-starter-background {
-  background-image: url(/images-franz/daily-starter.jpg);
+  background-image: url(images-franz/daily-starter.jpg);
 }
 
 .day-main-background {
-  background-image: url(/images-franz/daily-main.jpg);
+  background-image: url(images-franz/daily-main.jpg);
 }
 
 .day-dessert-background {
-  background-image: url(/images-franz/daily-dessert.jpg);
+  background-image: url(images-franz/daily-dessert.jpg);
 }
 
 .daily-icon-wrapper {
