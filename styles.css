@@ -239,6 +239,10 @@ h1 {
   font-weight: bolder;
 }
 
+h1 a:hover {
+  color: black;
+}
+
 h2 {
   padding-bottom: 2rem;
   font-family: "Roboto slab", serif;
@@ -291,7 +295,6 @@ nav {
 
 .nav-menu-list :any-link {
   font-size: 1rem;
-  text-decoration: none;
   color: black;
 }
 
@@ -399,7 +402,6 @@ footer {
 
 .contact-mail:any-link {
   font-size: 1rem;
-  text-decoration: none;
   color: black;
 }
 
@@ -414,7 +416,6 @@ footer {
 
 .footer-about-link:any-link {
   font-size: 1rem;
-  text-decoration: none;
   color: black;
 }
 
@@ -564,6 +565,11 @@ footer {
 
 .visible {
   display: flex !important;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: black;
 }
 
 /* Media queries */
